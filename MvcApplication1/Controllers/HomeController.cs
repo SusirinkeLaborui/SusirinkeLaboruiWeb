@@ -17,15 +17,12 @@ namespace MvcApplication1.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your app description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Downloads()
         {
-            ViewBag.Message = "Your contact page.";
-
+            ViewBag.Message = "Download the build and spec here!";
             return View();
         }
     }
