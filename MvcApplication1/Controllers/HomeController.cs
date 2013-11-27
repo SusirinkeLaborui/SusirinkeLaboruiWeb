@@ -26,11 +26,11 @@ namespace MvcApplication1.Controllers
             return View();
         }
 
-        public ActionResult DownloadSpec()
-        {
-            MemoryStream stream = someService.GetStream();
-            LiveConnectClient liveClien = "test";
-            return new FileStreamResult(stream, "application/pdf");
-        }
+        //public ActionResult DownloadSpec()
+        //{
+        //    MemoryStream stream = someService.GetStream();
+        //    LiveConnectClient liveClien = "test";
+        //    return new FileStreamResult(stream, "application/pdf");
+        //}
     }
 }
