@@ -29,7 +29,9 @@ namespace MvcApplication1.Controllers
         public ActionResult DownloadSpec()
         {
             var specFileStream = new FileStream("C:\\Users\\mindw0rk\\SkyDrive\\Specifikacija.docx", FileMode.Open);
-            return new FileStreamResult(specFileStream, "application/vnd.openxmlformats-officedocument.wordprocessingml.document");
+            var fileResult = new FileStreamResult(specFileStream, "application/vnd.openxmlformats-officedocument.wordprocessingml.document");
+            fileResult.FileDownloadName = @"Specification.docx";
+            return fileResult;
         }
     }
 }
